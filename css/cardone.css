@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Arimo:ital,wght@1,700&family=Lato:wght@100&family=Poppins:wght@100;600&family=Quattrocento&family=Roboto:ital,wght@1,100&display=swap');
+
+
+/* bg animation effect  */
+body {
+	
+    background: linear-gradient(180deg, #06b6d4,#701a75,#1d4ed8,#9d174d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+/*=============================== others ==================== */
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    min-height: 100vh;
+	margin: 0;
+}
+
+/* animation background   */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* bg animation effect end  */
+
+/* body{
+    font-family: 'Lato', sans-serif;
+    background: #8080BA;
+    
+} */
+*{
+    font-family: 'Lato', sans-serif;
+    /* background: #8080BA; */
+    
+} 
+.card__container{
+    width: 700px;
+    height: 490px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 4rem;
+
+
+    /* yes  */
+    background: #303B51;
+    transition: all .3s ease-in-out;
+  
+   
+}
+.card__container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* card information  */
+
+
+/* card title  */
+
+.card__header h2{
+    letter-spacing: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card__smallheading h3{
+    letter-spacing: .5rem;
+    margin-top: 3rem;
+    color:#F2F3F5;
+    text-align: center;
+    line-height: 3rem;
+}
+
+
+/* hr  */
+.hori hr{
+    margin-top: 4rem;
+    border-bottom-color: #000000;
+}
+
+
+
+
+/* social media  */
+
+.card__social__media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;  
+   
+
+}
+
+.fa-brands,.fa-solid{
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    color: whitesmoke;
+    
+}
+
+.fa-twitter{
+    background-color: #1da1f2;
+    border-radius: 50%;
+    padding: 1rem;
+   
+
+}
+.fa-facebook{
+    background-color: #4267B2;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.fa-facebook-messenger{
+    background-color: #006AFF;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.fa-square-envelope{
+    background-color: 	#661d1d;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+
+/* responsive design  */
+
+ /* Portrait tablet to landscape and desktop */
+   @media (min-width:100px) and (max-width:600px) { 
+
+    .card__container{
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top:3rem;
+     /* yes  */
+        background: #303B51;
+        transition: all .3s ease-in-out;
+      
+       
+}
+.card__container:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+}
+    
+/* card information  */
+    
+    
+/* card title  */
+    
+.card__header h2{
+        font-size: .87rem;
+        letter-spacing:.35rem;
+        color: white;
+        text-align: center;
+        margin-top: 2rem;
+        line-height: 2rem;
+    }
+  /* hr  */
+ .hori hr{
+        margin-top: 1rem;
+        width: 80%;
+        border-bottom-color: #2e2323;
+}
+    
+    .card__smallheading h3{
+        font-size: .55rem;
+        letter-spacing:.20rem;
+        margin-top: 2rem;
+        color:#F2F3F5;
+        text-align: center;
+        line-height: 1rem;
+    }   
+/* social media  */
+
+.card__social__media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;  
+   
+}
+.fa-brands,.fa-solid{
+    font-size:.60rem;
+    margin-top: 3rem;
+    color: whitesmoke;
+    
+}
+}
+
+ /* =============================  */
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width:603px) and (max-width:800px) { 
+
+    .card__container{
+        width: 350px;
+        height: 600px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top:4rem;
+     /* yes  */
+        background: #303B51;
+        transition: all .3s ease-in-out;
+      
+       
+}
+.card__container:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+}
+    
+/* card information  */
+    
+    
+/* card title  */
+    
+.card__header h2{
+        font-size: 1.5rem;
+        letter-spacing:.35rem;
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        line-height: 3rem;
+    }
+  /* hr  */
+ .hori hr{
+        margin-top: 1.5rem;
+        width: 80%;
+        border-bottom-color: #2e2323;
+}
+    
+    .card__smallheading h3{
+        font-size:.70rem;
+        letter-spacing:.20rem;
+        margin-top: 2rem;
+        color:#F2F3F5;
+        text-align: center;
+        line-height:1.4rem;
+    }   
+/* social media  */
+
+.card__social__media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;  
+   
+}
+.fa-brands,.fa-solid{
+    font-size:.60rem;
+    margin-top: 3rem;
+    color: whitesmoke;
+    
+}
+}
+   
+   
+   
+   
